@@ -1,0 +1,12 @@
+<mat-toolbar class="toolbar" color="primary">
+    <span class="clickable" (click)="navigateToHomepage()">Guardio</span>
+    <span class="fill-remaining-space"></span>
+
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>format_color_fill</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="changeTheme('light-theme')">Light</button>
+        <button mat-menu-item (click)="changeTheme('dark-theme')">Dark</button>
+    </mat-menu>
+</mat-toolbar>
