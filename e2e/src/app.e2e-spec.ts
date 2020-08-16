@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('guardio app is running!');
+    expect(page.getTitleText()).toEqual('pwned app is running!');
   });
 
   afterEach(async () => {
